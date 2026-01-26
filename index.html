@@ -98,7 +98,7 @@
               <a href="Resume.pdf" target="_blank" class="btn btn-primary">Download CV</a>
             </div>
 
-            <div class="copyrights">© 2024 All rights reserved.</div>
+            <div class="copyrights">© <span id="current-year"></span> All rights reserved.</div>
           </header>
 
           <!-- Mobile Navigation -->
@@ -128,27 +128,27 @@
                           <h2>Mathias Jarbekk</h2>
                           <div class="owl-carousel text-rotation">                                    
                             <div class="item">
-                              <div class="sp-subtitle">InfoSec</div>
+                              <div class="sp-subtitle">Security Analyst</div>
                             </div>
 
                             <div class="item">
-                              <div class="sp-subtitle">DataSec</div>
+                              <div class="sp-subtitle">Security Reviews</div>
                             </div>
 
                             <div class="item">
-                              <div class="sp-subtitle">PhysSec</div>
+                              <div class="sp-subtitle">OSINT & Recon</div>
                             </div>
 
                              <div class="item">
-                              <div class="sp-subtitle">PenTest</div>
+                              <div class="sp-subtitle">Web Security</div>
                             </div>
 
                             <div class="item">
-                              <div class="sp-subtitle">DevOps</div>
+                              <div class="sp-subtitle">SysAdmin (Security-minded)</div>
                             </div>
                            
                             <div class="item">
-                              <div class="sp-subtitle">SysAdmin</div>
+                              <div class="sp-subtitle">Incident Response (basic)</div>
                             </div>
 
                             <div class="item">
@@ -191,8 +191,8 @@
                           </li>
 
                           <li>
-                            <span class="title">Address</span>
-                            <span class="value">Steinhammerveien 4, Oslo</span>
+                            <span class="title">Region</span>
+                            <span class="value">Oslo</span>
                           </li>
 
                           <li>
@@ -605,13 +605,25 @@
 
                       <div class="timeline-item clearfix">
                         <div class="left-part">
+                          <h5 class="item-period">October 2018 - Current</h5>
+                          <span class="item-company">Imperial Black Legion online gaming group</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="right-part">
+                          <h4 class="item-title">Server Administrator then System Administrator</h4>
+                          <p>Voluntary work for an online gaming community, managing servers and system administration tasks to ensure smooth operation and a positive user experience.</p>
+                        </div>
+                      </div>
+
+                      <div class="timeline-item clearfix">
+                        <div class="left-part">
                           <h5 class="item-period">October 2018 - January 2019</h5>
                           <span class="item-company">Tanner Co, Banking Hall</span>
                         </div>
                         <div class="divider"></div>
                         <div class="right-part">
                           <h4 class="item-title">Event Staff/Bartender</h4>
-                          <p>First job I got after leaving EBS.</p>
+                          <p>First job I got after graduationg from the European Bartenter School of London.</p>
                         </div>
                       </div>
                     </div>
@@ -658,7 +670,7 @@
                         
                         <!-- Skill 4 -->
                         <div class="skill clearfix">
-                          <h4>Penetration Testing</h4>
+                          <h4>Security Culture</h4>
                           <div class="skill-value">90%</div>
                         </div>
                         <div class="skill-container skill-4">
@@ -725,6 +737,14 @@
                         <div class="skill-container skill-9">
                           <div class="skill-percentage"></div>
                         </div>
+
+                        <div class="skill clearfix">
+                          <h4>React</h4>
+                          <div class="skill-value">75%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
                         <!-- End of Skill 9 -->
                       </div>
                       <!-- End of Coding Skills -->
@@ -737,18 +757,21 @@
                       </div>
 
                       <ul class="knowledges">
-                        <li>PenTesting</li>
-                        <li>Social Manipulation</li>
-                        <li>SysAdmin</li>
-                        <li>Web Development</li>
-                        <li>Cyber Security</li>
-                        <li>Laws and Regulations Compliance</li>
-                        <li>Social Media</li>
-                        <li>Time Management</li>
-                        <li>Communication</li>
-                        <li>Problem-Solving</li>
-                        <li>Social Networking</li>
-                        <li>Flexibility</li>
+                        <li>Risk assessment & security reviews</li>
+                        <li>Vulnerability management</li>
+                        <li>Threat modeling (basic)</li>
+                        <li>OSINT & recon</li>
+                        <li>Web security fundamentals (OWASP)</li>
+                        <li>Network fundamentals (TCP/IP, DNS, HTTP)</li>
+                        <li>Linux & Windows administration</li>
+                        <li>Logging & troubleshooting</li>
+                        <li>Hardening & access control</li>
+                        <li>Incident handling (basic)</li>
+                        <li>Documentation & stakeholder communication</li>
+                        <li>Team leadership & coordination</li>
+                        <li>Social engineering awareness</li>
+                        <li>Security culture & training</li>
+                        <li>Vulnerability assessment</li>
                       </ul>
                       <!-- End of Knowledges -->
                     </div>
@@ -1163,5 +1186,10 @@
 
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+    
+    <script>
+      // Auto-update copyright year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
