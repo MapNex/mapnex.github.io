@@ -1389,7 +1389,7 @@ textarea.form-control, textarea.form-control:focus {
   list-style: none;
 }
 
-.knowledges li {;
+.knowledges li {
   display: inline-block;
   background-color: #f58545;
   border-radius: 3px;
@@ -1480,7 +1480,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .lmpixels-map iframe {
-  height: 140px;
+  height: 500px;
   max-width: 100%;
   width: 100%;
   margin: 0;
